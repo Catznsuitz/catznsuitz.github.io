@@ -24,15 +24,33 @@
       border-radius: 10px;
     }
     
-    .spotify-player {
+    .music-container {
     position: fixed;
     bottom: 20px;
     left: 20px;
     z-index: 9999;
 
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.music-text {
+    background: rgba(40, 40, 40, 0.85);
+    color: white;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+}
+
+.spotify-player {
     border-radius: 12px;
     overflow: hidden;
-
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
   </style>
