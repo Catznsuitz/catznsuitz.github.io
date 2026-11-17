@@ -6,6 +6,24 @@
   <title>My beautiful site</title>
 
   <style>
+    .music-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: rgba(70, 70, 70, 0.75);
+    padding: 12px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+    
     body {
       background-image: url('jpg(7).jpg');
       background-repeat: repeat;
@@ -58,33 +76,6 @@
 
 <body>
   
-  .music-container {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 9999;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    /* Background box */
-    background: rgba(70, 70, 70, 0.75);
-
-    /* Spacing inside the box */
-    padding: 12px;
-
-    /* Rounded corners */
-    border-radius: 15px;
-
-    /* Glass effect */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    /* Shadow */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
   <div class="music-container">
 
     <div class="music-text">
